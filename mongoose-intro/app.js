@@ -55,6 +55,24 @@ const Cat = mongoose.model('Cat', catSchema);
 //         console.log(cat);
 //     })
 
+// deletes the first document that matches the query
+// Cat.deleteOne({ hungry: true }).then(result => {
+//     console.log(result);
+// });
+
+// updates cat with this id
+// Cat.findByIdAndUpdate('id890890', { name: 'foo' });
+
+
+// Cat.updateMany(query, changes) -> updates all documents matching the given query and apply the changes to these documents
+// Cat.updateMany({ age: 9 }, { age: 18, hungry: true })
+//     .then(result => {
+//         console.log(result);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     });
+
 
 // insertMany gets an array of objects
 // Cat.insertMany([
